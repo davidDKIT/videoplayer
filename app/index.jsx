@@ -13,14 +13,16 @@ export default function App() {
         <View className="w-full items-center justify-center min-h-[84vh] px-4">
           <Image
             source={images.logo}
-            className="w-[250px] h-[300px]"
+            className="w-[230px] h-[200px] mt-10"
             resizeMode="contain"
           />
+
+          <Text className="text-sm text-black-100 font-pregular mt-1 text-center">Share Your Cat's Best Moments.</Text>
 
           <CustomButton
             title="Continue With Email"
             handlePress={() => router.push('/sign-in')}
-            containerStyles="w-full mt-7"
+            containerStyles="w-full mt-9"
           ></CustomButton>
         </View>
       </ScrollView>
